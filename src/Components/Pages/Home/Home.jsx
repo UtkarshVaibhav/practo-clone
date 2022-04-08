@@ -1,3 +1,4 @@
+// import 'bootstrap/dist/css/bootstrap.min.css'; 
 import React from 'react'
 import style from './Home.module.css';
 import {UpperPart} from './UpperPart/UpperPart.jsx';
@@ -6,6 +7,8 @@ import {Footer} from '../../Footer/Footer';
 import styled from 'styled-components';
 import { ResponsiveFooter } from '../../Footer/ResponsiveFooter';
 import { Copyright } from '../../Copyright/Copyright';
+import {UserFeedBack} from './UserFeedBack/UserFeedBack';
+
 
 const FooterNonResponsive=styled.div`
 @media all and (max-width: 769px)
@@ -28,6 +31,7 @@ export const Home = () => {
     <div className={style.container}>
       <UpperPart/>
       {/* <MiddlePart/> */}
+      <UserFeedBack/>
     </div>
     <FooterNonResponsive>
       <Footer/>
