@@ -70,6 +70,9 @@ span{
     color: #787887;
     font-weight: 400;
 }
+.faicons{
+    margin:2px;
+}
 `
 const DownloadNow = styled.div`
 background-color:#414146;
@@ -109,11 +112,11 @@ export const SideNavBar = ({show,setShow}) => {
         </PlusDiv>
         <hr />
         <Links>
-            <WrapperLink to="/doctors" onClick={()=>setShow(!show)}> <FontAwesomeIcon icon={faSearch} /> Find Doctors - <span>Book an Appointment</span></WrapperLink>
-            <WrapperLink to="/consult" onClick={()=>setShow(!show)}><FontAwesomeIcon icon={faVideo} />Video Consult - <span>Consult top doctors</span></WrapperLink>
-            <WrapperLink to="/medicines" onClick={()=>setShow(!show)}><FontAwesomeIcon icon={faCartArrowDown} />Medicines - <span>Practo pharmacy</span></WrapperLink>
-            <WrapperLink to="/tests" onClick={()=>setShow(!show)}><FontAwesomeIcon icon={faHome} />Lab Tests - <span>Book tests & checkup</span></WrapperLink>
-            <WrapperLink to="/care" onClick={()=>setShow(!show)}><FontAwesomeIcon icon={faUserNurse} />Surgeries - <span>Expert surgical care</span></WrapperLink>
+            <WrapperLink to="/doctors" onClick={()=>setShow(!show)}> <span className='faicons'><FontAwesomeIcon icon={faSearch} /></span>Find Doctors - <span>Book an Appointment</span></WrapperLink>
+            <WrapperLink to="/consult" onClick={()=>setShow(!show)}> <span className='faicons'><FontAwesomeIcon icon={faVideo} /></span> Video Consult - <span>Consult top doctors</span></WrapperLink>
+            <WrapperLink to="/medicines" onClick={()=>setShow(!show)}> <span className='faicons'><FontAwesomeIcon icon={faCartArrowDown} /></span> Medicines - <span>Practo pharmacy</span></WrapperLink>
+            <WrapperLink to="/tests" onClick={()=>setShow(!show)}> <span className='faicons'><FontAwesomeIcon icon={faHome} /></span> Lab Tests - <span>Book tests & checkup</span></WrapperLink>
+            <WrapperLink to="/care" onClick={()=>setShow(!show)}> <span className='faicons'><FontAwesomeIcon icon={faUserNurse} /></span> Surgeries - <span>Expert surgical care</span></WrapperLink>
         </Links>
         <DownloadNow>
         <FontAwesomeIcon icon={faMobileScreenButton}/>
@@ -123,10 +126,10 @@ export const SideNavBar = ({show,setShow}) => {
         </div>
         </DownloadNow>
         <Links>
-            <WrapperLink to="/doctors" onClick={()=>setShow(!show)}> <FontAwesomeIcon icon={faBookOpen} /> <span>Read health articles</span></WrapperLink>
-            <WrapperLink to="/consult" onClick={()=>setShow(!show)}><FontAwesomeIcon icon={faBookBible} /><span>View medical records</span></WrapperLink>
-            <WrapperLink to="/medicines" onClick={()=>setShow(!show)}><FontAwesomeIcon icon={faCapsules} /><span>Read about medicines</span></WrapperLink>
-            <WrapperLink to="/tests" onClick={()=>setShow(!show)}><FontAwesomeIcon icon={faHospital} /><span>Read about medicine</span></WrapperLink>
+            <WrapperLink to="/doctors" onClick={()=>setShow(!show)}>  <span className='faicons'><FontAwesomeIcon icon={faBookOpen} /></span> <span>Read health articles</span></WrapperLink>
+            <WrapperLink to="/consult" onClick={()=>setShow(!show)}> <span className='faicons'><FontAwesomeIcon icon={faBookBible} /></span><span>View medical records</span></WrapperLink>
+            <WrapperLink to="/medicines" onClick={()=>setShow(!show)}> <span className='faicons'><FontAwesomeIcon icon={faCapsules} /></span><span>Read about medicines</span></WrapperLink>
+            <WrapperLink to="/tests" onClick={()=>setShow(!show)}> <span className='faicons'><FontAwesomeIcon icon={faHospital} /></span><span>Read about medicine</span></WrapperLink>
         </Links>
         <hr />
                 <Links>

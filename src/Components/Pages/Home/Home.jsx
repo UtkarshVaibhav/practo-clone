@@ -4,8 +4,8 @@ import style from './Home.module.css';
 import {UpperPart} from './UpperPart/UpperPart.jsx';
 // import {MiddlePart} from './MiddlePart/MiddlePart.jsx';
 import {Footer} from '../../Footer/Footer';
-import styled from 'styled-components';
 import { ResponsiveFooter } from '../../Footer/ResponsiveFooter';
+import styled from 'styled-components';
 import { Copyright } from '../../Copyright/Copyright';
 import {UserFeedBack} from './UserFeedBack/UserFeedBack';
 
